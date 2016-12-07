@@ -1,0 +1,26 @@
+
+package extending;
+
+public class Dog extends Mammals{
+    boolean hunting;
+
+    public Dog(int furType, int numberOfLegs) {
+        super(12,4);
+        System.out.println("Pustoj constructor Dog");
+    }
+    
+    public Dog(boolean hunting) {
+        super(12,24);
+        System.out.println("Constructor s parametrami Dog");
+        this.hunting = hunting;
+        this.dogBirth();
+    }
+
+    @Override
+    public String toString() {
+        System.out.println("toString Mammals");
+        return "Dog{" + "hunting=" + hunting + '}';
+    }
+    
+    
+}
