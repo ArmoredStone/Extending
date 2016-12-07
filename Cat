@@ -1,0 +1,24 @@
+package extending;
+
+public class Cat extends Mammals {
+
+    boolean forest;
+
+    public Cat(int furType, int numberOfLegs) {
+        super(12, 4);
+        System.out.println("Pustoj constructor Cat");
+    }
+
+    public Cat(boolean forest) {
+        super(12,24);
+        System.out.println("Constructor s parametrami Cat");
+        this.forest = forest;
+        this.catBirth();
+    }
+
+    @Override
+    public String toString() {
+        System.out.println("toString Cat");
+        return "Cat{" + "forest=" + forest + '}';
+    }
+}
