@@ -1,0 +1,26 @@
+
+package extending;
+
+public class Shark extends Fish{
+    int numberOfTooth;
+
+    public Shark() {
+        super(11,22);
+        System.out.println("Pustoj constructor Shark");
+    }
+
+    public Shark(int numberOfTooth) {
+        super(11,22);
+        System.out.println("Constructor s parametrami shark");
+        this.numberOfTooth = numberOfTooth;
+        this.sharkBirth();
+    }
+
+    @Override
+    public String toString() {
+        System.out.println("toString Shark");
+        return "Shark{" + "numberOfTooth=" + numberOfTooth + '}';
+    }
+    
+    
+}
