@@ -1,0 +1,31 @@
+package extending;
+
+public class Fish extends Animals {
+
+    int numberOfFins;
+    int depth;
+
+    public Fish(int ves, int razmer, int okras) {
+        super(12, 25, 11);
+        System.out.println("Pustoj constructor Fish");
+    }
+
+    public Fish(int depth, int numberOfFins) {
+        super(12, 25, 11);
+        System.out.println("constructor s parametrami Fish");
+        this.depth = depth;
+        this.numberOfFins = numberOfFins;
+        this.fishBirth();
+    }
+
+    void sharkBirth() {
+        System.out.println("Shark rodilsja :) ");
+    }
+
+    @Override
+    public String toString() {
+        System.out.println("toStringFish");
+        return "Fish{" + "numberOfFins=" + numberOfFins + ", depth=" + depth + '}';
+    }
+
+}
