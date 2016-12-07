@@ -1,0 +1,12 @@
+package extending;
+
+public class Extending {
+
+    public static void main(String[] args) {
+        Mammals mammal = new Mammals();
+    }
+    void animalsBirth(){
+        System.out.println("Animals rodilsja :)");
+    }
+
+}
