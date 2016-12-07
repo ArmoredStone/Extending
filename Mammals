@@ -1,0 +1,35 @@
+package extending;
+
+public class Mammals extends Animals {
+
+    int furType;
+    int numberOfLegs;
+
+    public Mammals() {
+        super(12, 13, 23);
+        System.out.println("pustoj constructor Mammals");
+    }
+
+    public Mammals(int furType, int numberOfLegs) {
+        super(24,6,12);
+        System.out.println("constructor s parametrami Mammals");
+        this.furType = furType;
+        this.numberOfLegs = numberOfLegs;
+        this.mammalsBirth();
+    }
+
+    void catBirth() {
+        System.out.println("Cat rodilsja :) ");
+    }
+
+    void dogBirth() {
+        System.out.println("Dog rodilsja :) ");
+    }
+
+    @Override
+    public String toString() {
+        System.out.println("toString Mammals");
+        return "Mammals{" + "furType=" + furType + ", numberOfLegs=" + numberOfLegs + '}';
+    }
+
+}
